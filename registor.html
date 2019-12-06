@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>registor</title>
+    <style>
+                 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background-color: lightskyblue;
+  
+}
+.wrapper{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+.contact-form{
+  display: flex;
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.8);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.input-fields{
+   display: flex;
+  flex-direction: column;
+  margin-right: 4%;
+}
+.input-fields .input{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #c5ecfd;
+}
+.btn {
+    background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+a{
+  background: #39b7dd;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.slct{
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 100%;
+
+}
+.radio{
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+    color: #c5ecfd;
+}
+.radio + .radio{
+    margin-left: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="contact-form">
+            <div class="input-fields">
+                    <form action="/registration" method="GET">
+         
+            
+                        <input type="text" name="fname" value="" class="input" placeholder="firstname">
+                     
+                        <input type="text" name="lname" value="" class="input" placeholder="lastname">
+                    
+                        <label class="radio">
+                                <input type="radio" value="male" name="gender">
+                                male
+                                <span></span>
+                 
+                            </label>
+                            <label class="radio">
+                                 <input type="radio" value="male" name="gender">
+                                 female
+                                 <span></span>
+                  
+                             </label>
+                   
+        
+                    <select class="slct" name="Country"> 
+                        <option value="">Country</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Tanzania">Tanzania</option>
+                    </select>
+                    <select class="slct" name="Courses">
+                        <option value="">Courses</option>
+                        <option value="Web Developer">Web Developer</option>
+                        <option value="ICDL">ICDL</option>
+                        <option value="Oracle">Oracle</option>
+        
+                    </select>
+                     
+                        <input type="text" name="email" value="" placeholder="email" class="input"> 
+                     
+                        <input type="text" name="usrname" value="" placeholder="username" class="input">
+                    
+                        <input type="password" name="password" value="" placeholder="password" class="input">
+                    <button type="submit" name="button" class="btn">Registor</button>
+                    <a href="login.html" >Login</a>
+        
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
